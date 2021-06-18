@@ -1,11 +1,10 @@
 {
-  "name": "@ailo/typescript-starter",
+  "name": "nodejs-sagas-poc",
   "version": "1.0.1",
-  "description": "Ailo TypeScript starter",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "https://github.com/ailohq/typescript-starter",
+  "repository": "https://github.com/ailohq/nodejs-sagas-poc",
   "license": "MIT",
   "keywords": [],
   "scripts": {
@@ -28,8 +27,7 @@
     "clean": "trash build test",
     "validate": "run-s lint test build",
     "prepare-release": "run-s reset lint test build version-bump",
-    "release": "yarn prepare-release && git push --follow-tags origin master --no-verify && yarn publish --non-interactive",
-    "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('@ailo/typescript-starter must be installed with Yarn: https://yarnpkg.com/')\""
+    "release": "yarn prepare-release && git push --follow-tags origin master --no-verify && yarn publish --non-interactive"
   },
   "husky": {
     "hooks": {
@@ -57,9 +55,7 @@
   "engines": {
     "node": ">=8.9"
   },
-  "dependencies": {
-    "@ailo/ailorn": "1.0.70"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@ailo/eslint-config": "2.4.2",
     "@bitjson/npm-scripts-info": "^1.0.0",
